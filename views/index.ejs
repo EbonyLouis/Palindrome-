@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<section class="top">
+<h1> Palindrome .....?</h1>
+<h3>Instructions: please type in one word to see if it is a Palindrome or not.</h3>
+</section>
+<section class="middle">
+  <form action="/palindrome" method="POST">
+    <!-- to grab the content from a post or user submit you need to use the "name=" name so its 'req.body.word' -->
+    <input class="word" type="text" name="word" value=""placeholder="Ex: radar, madam, orange, yellow">
+    <button id="check" type="submit">Palindrome?</button>
+  </form>
+</section>
+
+<section>
+<h3 id="result"></h3>
+</section>
+
+<section class="middle">
+  <p>Previously checked Words</p>
+  <ul class="palindrome">
+  <% for(var i=0; i<canCallThisAnything.length; i++) {%>
+    <li class="palindrome">
+      <span><%= canCallThisAnything[i].word %></span>
+      <span><%= canCallThisAnything[i].isItAPalindrome%></span>
+    </li>
+  <% } %>
+  </ul>
+</section>
+
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

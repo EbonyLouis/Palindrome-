@@ -1,0 +1,20 @@
+.top , .middle {
+  text-align: center
+}
+input {
+  width: 26%;
+}
+button {
+  cursor:pointer;
+}
+li{
+  list-style: none;
+    font-size: 17px;
+}
+p{
+      font-size: 21px;
+      margin-left: 9px;
+}
+.middle{
+  text-align: center;
+}
